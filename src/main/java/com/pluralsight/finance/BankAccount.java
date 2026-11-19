@@ -18,6 +18,10 @@ public class BankAccount implements Valuable{
         balance.subtract(amount);
     }
 
+    public void deposit(BigDecimal amount){
+        balance.add(amount);
+    }
+
     public BigDecimal getValue(){
         return balance;
     }
