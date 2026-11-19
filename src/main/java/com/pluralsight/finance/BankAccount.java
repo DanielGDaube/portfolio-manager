@@ -14,6 +14,10 @@ public class BankAccount implements Valuable{
         this.balance = balance;
     }
 
+    public void withdraw(BigDecimal amount){
+        balance.subtract(amount);
+    }
+
     public BigDecimal getValue(){
         return balance;
     }
