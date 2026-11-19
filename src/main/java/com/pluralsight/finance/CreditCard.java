@@ -14,6 +14,14 @@ public class CreditCard {
         this.balance = balance;
     }
 
+    public void charge(BigDecimal amount){
+        balance.subtract(amount);
+    }
+
+    public void pay(BigDecimal amount){
+        balance.add(amount);
+    }
+
     public BigDecimal getValue(){
         return balance;
     }
